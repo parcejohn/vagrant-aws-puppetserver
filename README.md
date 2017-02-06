@@ -18,9 +18,9 @@ Default output format [None]: json
 ```
 
 # Usage
-Clone this repository
-Add your specific data to servers.yaml
-finally...
+* Clone this repository
+* Add your specific data to servers.yaml
+* finally...
 ```
 $ vagrant up
 ```
