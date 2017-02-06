@@ -1,0 +1,21 @@
+---
+- name: puppetserver
+  box: dummy
+  box_url: https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box
+  aws_region: "us-east-1"
+  aws_keypair_name: "yourkey"
+  aws_subnet_id: "subnet-x" 
+  aws_associate_public_ip: false
+  aws_security_groups: ['sg-x'] 
+  aws_ami: "ami-x"
+  aws_instance_type: m3.xlarge
+  aws_ssh_username: "ec2-user"
+  aws_iam_role: "ec2-describe-tags"
+  aws_ssh_private_key_path: "/Users/john/.ssh/yourkey.pem"
+  aws_user_data: "#!/bin/bash\nsed -i -e 's/^Defaults.*requiretty/# Defaults requiretty/g' /etc/sudoers"
+  aws_tags: 
+    Name: 'puppetserver'
+    tier: 'production'
+    application: 'puppet'
+  update: false
+  provision: install_puppetserver.sh
