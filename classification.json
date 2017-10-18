@@ -1,0 +1,17 @@
+[{
+  "name": "gitlab",
+  "description": "role::gitlab",
+  "parent": "00000000-0000-4000-8000-000000000000",
+  "classes": {
+    "role::gitlab":{}
+  }
+},
+{
+  "name": "mysql",
+  "description": "role::mysql",
+  "parent": "00000000-0000-4000-8000-000000000000",
+  "classes": {
+    "role::mysql":{}
+  }
+}
+]
