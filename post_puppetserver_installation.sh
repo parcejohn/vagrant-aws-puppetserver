@@ -40,7 +40,7 @@ curl -H "Content-Type: application/json" \
   -X POST &&
 
 # Create classification
-for group in `python -c 'from __future__ import print_function; import sys,json; [ print(json.dumps(x).replace(" ","")) for x in json.load(open("/vagrant/classification.json")) ]'`
+for group in `python -c 'from __future__ import print_function; import sys,json; [ print(json.dumps(x).replace(" ","")) for x in json.load(open("./classification.json")) ]'`
 do
 	curl -H "Content-Type: application/json"  \
 	 --cert   $CERT  \
