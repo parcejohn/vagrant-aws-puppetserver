@@ -24,9 +24,3 @@ Default output format [None]: json
 ```
 $ vagrant up
 ```
-
-# Post Installation
-To use your existing Code, you can run the post installation script, but will need to have the Git SSH key, and the classification.json file you would like to use.
-```
-$ ./post_puppetserver_installation.sh
-```
